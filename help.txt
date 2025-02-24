@@ -1,0 +1,38 @@
+ZefTracker - Music tracker with real 
+multi-channel sound generation.
+Inspired by FamiTracker.
+
+Repo: https://github.com/savehope/zeftracker
+
+MIT (c) 2025 Savehope.
+
+
+
+# Controls:
+  ### General
+  [F4]         > Exit program
+
+  [Tab]        > Next tab
+  [F5]         > File tab
+  [F6]         > Editor tab
+  [F7]         > Note editor tab
+  [F8]         > Help tab
+  Also, tabs are clickable.
+
+  ### File tab
+  [Up]         > Select up
+  [Down]       > Select down
+  [Enter]      > Open selected file/directory
+  [Backspace]  > Open parent directory
+
+  ### Editor tab
+  <TODO>
+
+  ### Rows editor tab
+  <TODO>
+
+  ### Help tab
+  [Up]         > Scroll up
+  (Wheel up)
+  [Down]       > Scroll down
+  (Wheel down)
