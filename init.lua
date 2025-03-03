@@ -14,7 +14,7 @@ zeftracker = {}
 
 --  Variables
 
-zeftracker.version = "0.6 b8"
+zeftracker.version = "0.6 b9"
 zeftracker.engine = require "engine"
 zeftracker.ui = require "ui"
 

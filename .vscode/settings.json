@@ -1,0 +1,9 @@
+{
+    "editor.tabSize": 2,
+    "Lua.diagnostics.globals": [
+        "colors"
+    ],
+    "Lua.diagnostics.disable": [
+        "undefined-global"
+    ]
+}

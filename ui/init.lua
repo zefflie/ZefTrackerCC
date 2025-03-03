@@ -37,7 +37,7 @@ function ui.mainloop()
     draw.clear(colors.white, colors.black)
 
     draw.clear_line(1, colors.magenta, colors.gray)
-    draw.writef("\02727 ZefTracker v"..zeftracker.version.."\02787 = ", 1)
+    draw.writef("\0272f ZefTracker v"..zeftracker.version.." \027f7\158\157\02787", 1)
 
     for i, v in ipairs(ui.pages) do
       local col = i == ui.page_index and "0" or "8"

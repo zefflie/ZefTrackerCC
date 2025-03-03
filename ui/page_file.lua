@@ -87,18 +87,29 @@ function page.input(event, data)
     --  Open selected file/directory
     elseif key == keys.enter then
       if file.name == ".." then
-        
         page.back()
 
       else
+        local fullname = fs.combine(page.path, file.name)
+
         if file.flags.isDir then
           page.index = 1
-          page.path = "/" .. fs.combine(page.path, file.name)
-          page.fetch()
+          page.path = "/" .. 
+          page.fetch(fullname)
 
         else
-          zeftracker.engine.ztmodule.open(fs.combine(page.path, file.name))
-          zeftracker.ui.set_tab(2)
+          local status, err = pcall(zeftracker.engine.ztm_open, fullname)
+          if status then
+            zeftracker.ui.set_tab(2)
+          
+          else
+            zeftracker.engine.ztm_new()
+            draw.set_color(colors.red)
+            print(err)
+            draw.set_color(colors.white)
+            print("Press any key to continue...")
+            os.pullEvent("key")
+          end
         end
       end
     end
