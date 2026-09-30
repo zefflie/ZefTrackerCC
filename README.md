@@ -6,4 +6,4 @@ Inspired by FamiTracker.
 
 Repo: https://github.com/savehope/zeftracker
 
-MIT (c) 2025 Savehope.
+MIT (c) 2026 Zefflie.
