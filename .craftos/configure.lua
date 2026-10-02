@@ -1,0 +1,1 @@
+periphemu.create("left", "speaker")
